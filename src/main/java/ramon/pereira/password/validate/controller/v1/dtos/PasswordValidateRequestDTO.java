@@ -17,6 +17,5 @@ import javax.validation.constraints.Size;
 public class PasswordValidateRequestDTO {
 
     @NotNull
-    @Size(min = 9)
     private String password;
 }
