@@ -4,6 +4,7 @@ import lombok.NonNull;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Component;
 import ramon.pereira.password.validate.validator.PasswordValidateValidator;
+import ramon.pereira.password.validate.validator.WithPasswordValidateValidator;
 
 @Component
 @RequiredArgsConstructor
