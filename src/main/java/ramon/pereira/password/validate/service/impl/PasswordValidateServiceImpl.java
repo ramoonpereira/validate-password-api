@@ -20,7 +20,13 @@ public class PasswordValidateServiceImpl implements PasswordValidateService {
     public Boolean validatePassword(@NonNull final PasswordValidateModel passwordValidateModel) {
         try {
             passwordValidateValidator.withPassword(passwordValidateModel.getPassword())
-                    .validSize();
+                    .validSize()
+                    .validWhitespace()
+                    .validDigits()
+                    .validCharacterLowerCase()
+                    .validCharacterUpperCase()
+                    .validSpecialCharacters()
+                    .validRepeatedCharacters();
 
             return Boolean.TRUE;
 

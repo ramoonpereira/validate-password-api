@@ -8,5 +8,16 @@ public interface PasswordValidateValidator {
 
         WithPasswordValidateValidator validSize();
 
+        WithPasswordValidateValidator validRepeatedCharacters();
+
+        WithPasswordValidateValidator validSpecialCharacters();
+
+        WithPasswordValidateValidator validWhitespace();
+
+        WithPasswordValidateValidator validDigits();
+
+        WithPasswordValidateValidator validCharacterLowerCase();
+
+        WithPasswordValidateValidator validCharacterUpperCase();
     }
 }
