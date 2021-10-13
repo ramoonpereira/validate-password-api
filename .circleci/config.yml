@@ -1,0 +1,27 @@
+version: 2
+jobs:
+  build:
+    working_directory: ~/validate-password-api
+    docker:
+      - image: maven:3.8.3-openjdk-17-slim
+
+    steps:
+
+      - checkout
+
+      - restore_cache:
+          key: validate-password-api-{{ checksum "pom.xml" }}
+
+      - run: mvn dependency:go-offline
+
+      - save_cache:
+          paths:
+            - ~/.m2
+          key: validate-password-api-{{ checksum "pom.xml" }}
+
+      - run: mvn clean install
+
+      - store_artifacts:
+          path: target/validate-password-api*.jar
+
+    # See https://circleci.com/docs/2.0/deployment-integrations/ for deploy examples
