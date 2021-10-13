@@ -1,0 +1,14 @@
+version: '3.3'
+
+services:
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - '5000:5000'
+
+  sonar:
+    image: sonarqube:8.4.1-community
+    ports:
+      - "9000:9000"
