@@ -1,6 +1,7 @@
 package ramon.pereira.password.validate.service;
 
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.ValueSource;
@@ -10,6 +11,7 @@ import ramon.pereira.password.validate.service.impl.PasswordValidateServiceImpl;
 import ramon.pereira.password.validate.validator.impl.PasswordValidateValidatorImpl;
 
 import static org.assertj.core.api.Assertions.assertThat;
+import static org.assertj.core.api.Assertions.assertThatThrownBy;
 
 
 @ExtendWith(MockitoExtension.class)
@@ -22,6 +24,12 @@ class PasswordValidateServiceImplTest {
     final var passwordValidateValidator = new PasswordValidateValidatorImpl();
     this.passwordValidateService =
         new PasswordValidateServiceImpl(passwordValidateValidator);
+  }
+
+  @Test
+  void executePasswordValidateServiceValidatePasswordNullExpectNullPointException() {
+    assertThatThrownBy(() -> passwordValidateService.validatePassword(null))
+        .isExactlyInstanceOf(NullPointerException.class);
   }
 
   @ParameterizedTest
