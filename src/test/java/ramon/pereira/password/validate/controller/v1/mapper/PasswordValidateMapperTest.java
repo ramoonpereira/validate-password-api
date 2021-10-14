@@ -1,10 +1,9 @@
-package ramon.pereira.password.validate.controller.v1;
+package ramon.pereira.password.validate.controller.v1.mapper;
 
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.junit.jupiter.MockitoExtension;
 import ramon.pereira.password.validate.controller.v1.dtos.PasswordValidateRequestDTO;
-import ramon.pereira.password.validate.controller.v1.mapper.PasswordValidateMapper;
 import ramon.pereira.password.validate.model.PasswordValidateModel;
 
 import static org.assertj.core.api.Assertions.assertThat;
