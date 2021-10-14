@@ -67,12 +67,10 @@
 					</dependency>
 				</dependencies>
 				<configuration>
-					<configLocation>src/main/resources/google_checks.xml</configLocation>
-					<consoleOutput>true</consoleOutput>
+					<configLocation>/src/main/resources/google_checks.xml</configLocation>
 				</configuration>
 				<executions>
 					<execution>
-						<phase>validate</phase>
 						<goals>
 							<goal>check</goal>
 						</goals>
