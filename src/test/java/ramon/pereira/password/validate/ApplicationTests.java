@@ -1,5 +1,6 @@
 package ramon.pereira.password.validate;
 
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
@@ -8,6 +9,7 @@ class ApplicationTests {
 
   @Test
   void contextLoads() {
+    Assertions.assertTrue (Boolean.TRUE, "Application executed successfully");
   }
 
 }

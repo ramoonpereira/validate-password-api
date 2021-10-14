@@ -1,9 +1,7 @@
 package ramon.pereira.password.validate.service.impl;
 
-import lombok.AccessLevel;
 import lombok.AllArgsConstructor;
 import lombok.NonNull;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import ramon.pereira.password.validate.exception.PasswordInvalidException;
 import ramon.pereira.password.validate.model.PasswordValidateModel;

@@ -10,7 +10,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatThrownBy;
 
 @ExtendWith(MockitoExtension.class)
-public class PasswordValidateMapperTest {
+class PasswordValidateMapperTest {
 
   @Test
   void executePasswordValidateMapperToModelIsNullExpectNullPointerException() {

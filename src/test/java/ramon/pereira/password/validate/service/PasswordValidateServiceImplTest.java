@@ -13,7 +13,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 
 @ExtendWith(MockitoExtension.class)
-public class PasswordValidateServiceImplTest {
+class PasswordValidateServiceImplTest {
 
   private PasswordValidateServiceImpl passwordValidateService;
 
