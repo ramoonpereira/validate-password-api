@@ -17,7 +17,7 @@ import javax.validation.Valid;
 
 @RestController
 @RequestMapping("/v1/validatepassword")
-@AllArgsConstructor(access = AccessLevel.PACKAGE, onConstructor = @__(@Autowired))
+@AllArgsConstructor
 public class PasswordValidateController {
 
     private final PasswordValidateService passwordValidateService;
