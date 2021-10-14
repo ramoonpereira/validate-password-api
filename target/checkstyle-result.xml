@@ -1,78 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <checkstyle version="9.0.1">
-<file name="C:\Projects\validate-password-api\src\main\java\ramon\pereira\password\validate\Application.java">
+<file name="/home/ramon-pereira/Projects/git/validate-password-api/src/main/java/ramon/pereira/password/validate/service/PasswordValidateService.java">
+<error line="5" column="1" severity="warning" message="Falta o comentário Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocTypeCheck"/>
+</file>
+<file name="/home/ramon-pereira/Projects/git/validate-password-api/src/main/java/ramon/pereira/password/validate/service/impl/PasswordValidateServiceImpl.java">
+<error line="13" column="1" severity="warning" message="Falta o comentário Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocTypeCheck"/>
+</file>
+<file name="/home/ramon-pereira/Projects/git/validate-password-api/src/main/java/ramon/pereira/password/validate/model/PasswordValidateModel.java">
+<error line="5" column="1" severity="warning" message="Separação extra no grupo de importações anterior a &apos;lombok.AllArgsConstructor&apos;" source="com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"/>
+<error line="10" column="1" severity="warning" message="Falta o comentário Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocTypeCheck"/>
+</file>
+<file name="/home/ramon-pereira/Projects/git/validate-password-api/src/main/java/ramon/pereira/password/validate/Application.java">
 <error line="6" column="1" severity="warning" message="Falta o comentário Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocTypeCheck"/>
-<error line="9" column="1" severity="warning" message="A linha contém um caractere de tabulação." source="com.puppycrawl.tools.checkstyle.checks.whitespace.FileTabCharacterCheck"/>
-<error line="9" column="9" severity="warning" message="&apos;method def modifier&apos; tem um nível de indentação incorreto de 8. O nível esperado era o 2." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
-<error line="10" column="1" severity="warning" message="A linha contém um caractere de tabulação." source="com.puppycrawl.tools.checkstyle.checks.whitespace.FileTabCharacterCheck"/>
-<error line="10" column="17" severity="warning" message="O filho de &apos;method def&apos; está no nível de indentação incorreto de 16. O nível esperado era o 4." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
-<error line="11" column="1" severity="warning" message="A linha contém um caractere de tabulação." source="com.puppycrawl.tools.checkstyle.checks.whitespace.FileTabCharacterCheck"/>
-<error line="11" column="9" severity="warning" message="&apos;method def rcurly&apos; tem um nível de indentação incorreto de 8. O nível esperado era o 2." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
 </file>
-<file name="C:\Projects\validate-password-api\src\main\java\ramon\pereira\password\validate\controller\v1\dtos\PasswordValidateRequestDTO.java">
-<error line="5" column="1" severity="warning" message="Separação extra no grupo de importações anterior a &apos;javax.validation.constraints.NotNull&apos;" source="com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"/>
-<error line="7" column="1" severity="warning" message="Separação extra no grupo de importações anterior a &apos;lombok.AllArgsConstructor&apos;" source="com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"/>
-<error line="12" column="1" severity="warning" message="Falta o comentário Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocTypeCheck"/>
-<error line="17" column="14" severity="warning" message="Abreviações no nome &apos;PasswordValidateRequestDTO&apos; não deveriam conter mais do que &apos;1&apos; letras maiúsculas consecutivas." source="com.puppycrawl.tools.checkstyle.checks.naming.AbbreviationAsWordInNameCheck"/>
-<error line="19" column="5" severity="warning" message="&apos;member def modifier&apos; tem um nível de indentação incorreto de 4. O nível esperado era o 2." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
-</file>
-<file name="C:\Projects\validate-password-api\src\main\java\ramon\pereira\password\validate\controller\v1\dtos\PasswordValidateResponseDTO.java">
-<error line="9" column="1" severity="warning" message="Falta o comentário Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocTypeCheck"/>
-<error line="14" column="14" severity="warning" message="Abreviações no nome &apos;PasswordValidateResponseDTO&apos; não deveriam conter mais do que &apos;1&apos; letras maiúsculas consecutivas." source="com.puppycrawl.tools.checkstyle.checks.naming.AbbreviationAsWordInNameCheck"/>
-<error line="16" column="5" severity="warning" message="&apos;member def modifier&apos; tem um nível de indentação incorreto de 4. O nível esperado era o 2." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
-</file>
-<file name="C:\Projects\validate-password-api\src\main\java\ramon\pereira\password\validate\controller\v1\mapper\PasswordValidateMapper.java">
-<error line="7" column="1" severity="warning" message="Ordem lexicográfica errada para a importação &apos;javax.validation.constraints.NotNull&apos;. Deveria ser antes que &apos;ramon.pereira.password.validate.model.PasswordValidateModel&apos;." source="com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"/>
-<error line="7" column="1" severity="warning" message="Separação extra no grupo de importações anterior a &apos;javax.validation.constraints.NotNull&apos;" source="com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"/>
-<error line="9" column="1" severity="warning" message="Falta o comentário Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocTypeCheck"/>
-<error line="12" column="5" severity="warning" message="&apos;method def modifier&apos; tem um nível de indentação incorreto de 4. O nível esperado era o 2." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
-<error line="12" column="5" severity="warning" message="Falta o comentário Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck"/>
-<error line="13" column="9" severity="warning" message="O filho de &apos;method def&apos; está no nível de indentação incorreto de 8. O nível esperado era o 4." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
-<error line="16" column="5" severity="warning" message="&apos;method def rcurly&apos; tem um nível de indentação incorreto de 4. O nível esperado era o 2." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
-</file>
-<file name="C:\Projects\validate-password-api\src\main\java\ramon\pereira\password\validate\controller\v1\PasswordValidateController.java">
-<error line="16" column="1" severity="warning" message="Ordem lexicográfica errada para a importação &apos;javax.validation.Valid&apos;. Deveria ser antes que &apos;ramon.pereira.password.validate.service.PasswordValidateService&apos;." source="com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"/>
-<error line="16" column="1" severity="warning" message="Separação extra no grupo de importações anterior a &apos;javax.validation.Valid&apos;" source="com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"/>
-<error line="18" column="1" severity="warning" message="Falta o comentário Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocTypeCheck"/>
-<error line="23" column="5" severity="warning" message="&apos;member def modifier&apos; tem um nível de indentação incorreto de 4. O nível esperado era o 2." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
-<error line="25" column="5" severity="warning" message="&apos;method def modifier&apos; tem um nível de indentação incorreto de 4. O nível esperado era o 2." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
-<error line="25" column="5" severity="warning" message="Falta o comentário Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck"/>
-<error line="28" column="5" severity="warning" message="&apos;method def rparen&apos; tem um nível de indentação incorreto de 4. O nível esperado era o 2." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
-<error line="30" column="9" severity="warning" message="O filho de &apos;method def&apos; está no nível de indentação incorreto de 8. O nível esperado era o 4." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
-<error line="31" severity="warning" message="A linha contém mais do que 100 caracteres (foram encontrados 101)." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
-<error line="33" column="9" severity="warning" message="O filho de &apos;method def&apos; está no nível de indentação incorreto de 8. O nível esperado era o 4." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
-<error line="37" column="5" severity="warning" message="&apos;method def rcurly&apos; tem um nível de indentação incorreto de 4. O nível esperado era o 2." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
-</file>
-<file name="C:\Projects\validate-password-api\src\main\java\ramon\pereira\password\validate\exception\PasswordInvalidException.java">
+<file name="/home/ramon-pereira/Projects/git/validate-password-api/src/main/java/ramon/pereira/password/validate/validator/PasswordValidateValidator.java">
 <error line="3" column="1" severity="warning" message="Falta o comentário Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocTypeCheck"/>
 </file>
-<file name="C:\Projects\validate-password-api\src\main\java\ramon\pereira\password\validate\model\PasswordValidateModel.java">
-<error line="9" column="1" severity="warning" message="Falta o comentário Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocTypeCheck"/>
-<error line="16" column="5" severity="warning" message="&apos;member def modifier&apos; tem um nível de indentação incorreto de 4. O nível esperado era o 2." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
-</file>
-<file name="C:\Projects\validate-password-api\src\main\java\ramon\pereira\password\validate\service\impl\PasswordValidateServiceImpl.java">
-<error line="13" column="1" severity="warning" message="Falta o comentário Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocTypeCheck"/>
-<error line="17" column="5" severity="warning" message="&apos;member def modifier&apos; tem um nível de indentação incorreto de 4. O nível esperado era o 2." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
-<error line="19" column="5" severity="warning" message="&apos;method def modifier&apos; tem um nível de indentação incorreto de 4. O nível esperado era o 2." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
-<error line="21" column="9" severity="warning" message="&apos;try&apos; tem um nível de indentação incorreto de 8. O nível esperado era o 4." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
-<error line="22" column="13" severity="warning" message="O filho de &apos;try&apos; está no nível de indentação incorreto de 12. O nível esperado era o 6." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
-<error line="31" column="13" severity="warning" message="O filho de &apos;try&apos; está no nível de indentação incorreto de 12. O nível esperado era o 6." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
-<error line="33" column="9" severity="warning" message="&apos;try rcurly&apos; tem um nível de indentação incorreto de 8. O nível esperado era o 4." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
-<error line="34" column="13" severity="warning" message="O filho de &apos;catch&apos; está no nível de indentação incorreto de 12. O nível esperado era o 6." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
-<error line="35" column="9" severity="warning" message="&apos;catch rcurly&apos; tem um nível de indentação incorreto de 8. O nível esperado era o 4." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
-<error line="37" column="5" severity="warning" message="&apos;method def rcurly&apos; tem um nível de indentação incorreto de 4. O nível esperado era o 2." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
-</file>
-<file name="C:\Projects\validate-password-api\src\main\java\ramon\pereira\password\validate\service\PasswordValidateService.java">
-<error line="5" column="1" severity="warning" message="Falta o comentário Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocTypeCheck"/>
-<error line="7" column="5" severity="warning" message="&apos;method def modifier&apos; tem um nível de indentação incorreto de 4. O nível esperado era o 2." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
-</file>
-<file name="C:\Projects\validate-password-api\src\main\java\ramon\pereira\password\validate\validator\impl\PasswordValidateValidatorImpl.java">
+<file name="/home/ramon-pereira/Projects/git/validate-password-api/src/main/java/ramon/pereira/password/validate/validator/impl/PasswordValidateValidatorImpl.java">
 <error line="9" column="1" severity="warning" message="Falta o comentário Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocTypeCheck"/>
 <error line="13" column="5" severity="warning" message="&apos;method def modifier&apos; tem um nível de indentação incorreto de 4. O nível esperado era o 2." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
 <error line="15" column="9" severity="warning" message="O filho de &apos;method def&apos; está no nível de indentação incorreto de 8. O nível esperado era o 4." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
 <error line="16" column="5" severity="warning" message="&apos;method def rcurly&apos; tem um nível de indentação incorreto de 4. O nível esperado era o 2." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
 </file>
-<file name="C:\Projects\validate-password-api\src\main\java\ramon\pereira\password\validate\validator\impl\WithPasswordValidateValidatorImpl.java">
+<file name="/home/ramon-pereira/Projects/git/validate-password-api/src/main/java/ramon/pereira/password/validate/validator/impl/WithPasswordValidateValidatorImpl.java">
 <error line="8" column="1" severity="warning" message="Ordem lexicográfica errada para a importação &apos;java.util.Arrays&apos;. Deveria ser antes que &apos;ramon.pereira.password.validate.validator.WithPasswordValidateValidator&apos;." source="com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"/>
 <error line="8" column="1" severity="warning" message="Separação extra no grupo de importações anterior a &apos;java.util.Arrays&apos;" source="com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"/>
 <error line="10" column="1" severity="warning" message="Falta o comentário Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocTypeCheck"/>
@@ -128,13 +78,38 @@
 <error line="83" column="9" severity="warning" message="O filho de &apos;method def&apos; está no nível de indentação incorreto de 8. O nível esperado era o 4." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
 <error line="84" column="5" severity="warning" message="&apos;method def rcurly&apos; tem um nível de indentação incorreto de 4. O nível esperado era o 2." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
 </file>
-<file name="C:\Projects\validate-password-api\src\main\java\ramon\pereira\password\validate\validator\PasswordValidateValidator.java">
-<error line="3" column="1" severity="warning" message="Falta o comentário Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocTypeCheck"/>
-<error line="5" column="5" severity="warning" message="&apos;method def modifier&apos; tem um nível de indentação incorreto de 4. O nível esperado era o 2." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
-</file>
-<file name="C:\Projects\validate-password-api\src\main\java\ramon\pereira\password\validate\validator\WithPasswordValidateValidator.java">
+<file name="/home/ramon-pereira/Projects/git/validate-password-api/src/main/java/ramon/pereira/password/validate/validator/WithPasswordValidateValidator.java">
 <error line="3" column="1" severity="warning" message="Falta o comentário Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocTypeCheck"/>
 </file>
-<file name="C:\Projects\validate-password-api\src\main\resources\application.properties">
+<file name="/home/ramon-pereira/Projects/git/validate-password-api/src/main/java/ramon/pereira/password/validate/exception/PasswordInvalidException.java">
+<error line="3" column="1" severity="warning" message="Falta o comentário Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocTypeCheck"/>
+</file>
+<file name="/home/ramon-pereira/Projects/git/validate-password-api/src/main/java/ramon/pereira/password/validate/controller/v1/mapper/PasswordValidateMapper.java">
+<error line="7" column="1" severity="warning" message="Ordem lexicográfica errada para a importação &apos;javax.validation.constraints.NotNull&apos;. Deveria ser antes que &apos;ramon.pereira.password.validate.model.PasswordValidateModel&apos;." source="com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"/>
+<error line="7" column="1" severity="warning" message="Separação extra no grupo de importações anterior a &apos;javax.validation.constraints.NotNull&apos;" source="com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"/>
+<error line="9" column="1" severity="warning" message="Falta o comentário Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocTypeCheck"/>
+<error line="12" column="5" severity="warning" message="&apos;method def modifier&apos; tem um nível de indentação incorreto de 4. O nível esperado era o 2." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="12" column="5" severity="warning" message="Falta o comentário Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck"/>
+<error line="13" column="9" severity="warning" message="O filho de &apos;method def&apos; está no nível de indentação incorreto de 8. O nível esperado era o 4." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="16" column="5" severity="warning" message="&apos;method def rcurly&apos; tem um nível de indentação incorreto de 4. O nível esperado era o 2." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+</file>
+<file name="/home/ramon-pereira/Projects/git/validate-password-api/src/main/java/ramon/pereira/password/validate/controller/v1/dtos/PasswordValidateResponseDTO.java">
+<error line="5" column="1" severity="warning" message="Separação extra no grupo de importações anterior a &apos;lombok.AllArgsConstructor&apos;" source="com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"/>
+<error line="10" column="1" severity="warning" message="Falta o comentário Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocTypeCheck"/>
+<error line="15" column="14" severity="warning" message="Abreviações no nome &apos;PasswordValidateResponseDTO&apos; não deveriam conter mais do que &apos;1&apos; letras maiúsculas consecutivas." source="com.puppycrawl.tools.checkstyle.checks.naming.AbbreviationAsWordInNameCheck"/>
+</file>
+<file name="/home/ramon-pereira/Projects/git/validate-password-api/src/main/java/ramon/pereira/password/validate/controller/v1/dtos/PasswordValidateRequestDTO.java">
+<error line="5" column="1" severity="warning" message="Separação extra no grupo de importações anterior a &apos;javax.validation.constraints.NotNull&apos;" source="com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"/>
+<error line="7" column="1" severity="warning" message="Separação extra no grupo de importações anterior a &apos;lombok.AllArgsConstructor&apos;" source="com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"/>
+<error line="12" column="1" severity="warning" message="Falta o comentário Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocTypeCheck"/>
+<error line="17" column="14" severity="warning" message="Abreviações no nome &apos;PasswordValidateRequestDTO&apos; não deveriam conter mais do que &apos;1&apos; letras maiúsculas consecutivas." source="com.puppycrawl.tools.checkstyle.checks.naming.AbbreviationAsWordInNameCheck"/>
+</file>
+<file name="/home/ramon-pereira/Projects/git/validate-password-api/src/main/java/ramon/pereira/password/validate/controller/v1/PasswordValidateController.java">
+<error line="16" column="1" severity="warning" message="Ordem lexicográfica errada para a importação &apos;javax.validation.Valid&apos;. Deveria ser antes que &apos;ramon.pereira.password.validate.service.PasswordValidateService&apos;." source="com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"/>
+<error line="16" column="1" severity="warning" message="Separação extra no grupo de importações anterior a &apos;javax.validation.Valid&apos;" source="com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"/>
+<error line="18" column="1" severity="warning" message="Falta o comentário Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocTypeCheck"/>
+<error line="25" column="3" severity="warning" message="Falta o comentário Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck"/>
+</file>
+<file name="/home/ramon-pereira/Projects/git/validate-password-api/src/main/resources/application.properties">
 </file>
 </checkstyle>

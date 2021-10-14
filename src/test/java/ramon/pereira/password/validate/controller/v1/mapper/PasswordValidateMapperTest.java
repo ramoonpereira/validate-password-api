@@ -12,20 +12,20 @@ import static org.assertj.core.api.Assertions.assertThatThrownBy;
 @ExtendWith(MockitoExtension.class)
 public class PasswordValidateMapperTest {
 
-    @Test
-    void executePasswordValidateMapperToModelIsNullExpectNullPointerException() {
-        assertThatThrownBy(() -> PasswordValidateMapper.toModel(null))
-                .isExactlyInstanceOf(NullPointerException.class);
-    }
+  @Test
+  void executePasswordValidateMapperToModelIsNullExpectNullPointerException() {
+    assertThatThrownBy(() -> PasswordValidateMapper.toModel(null))
+        .isExactlyInstanceOf(NullPointerException.class);
+  }
 
-    @Test
-    void executePasswordValidateMapperToModelIsValidExpectSuccess() {
-        final var passwordDTO = PasswordValidateRequestDTO.builder()
-                .password("123456789")
-                .build();
+  @Test
+  void executePasswordValidateMapperToModelIsValidExpectSuccess() {
+    final var passwordDTO = PasswordValidateRequestDTO.builder()
+        .password("123456789")
+        .build();
 
-        assertThat(PasswordValidateMapper.toModel(passwordDTO))
-                .isNotNull()
-                .isExactlyInstanceOf(PasswordValidateModel.class);
-    }
+    assertThat(PasswordValidateMapper.toModel(passwordDTO))
+        .isNotNull()
+        .isExactlyInstanceOf(PasswordValidateModel.class);
+  }
 }

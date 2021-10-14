@@ -16,6 +16,6 @@ import lombok.NoArgsConstructor;
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class PasswordValidateRequestDTO {
 
-    @NotNull
-    private String password;
+  @NotNull
+  private String password;
 }

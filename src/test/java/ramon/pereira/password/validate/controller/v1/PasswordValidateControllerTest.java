@@ -18,53 +18,53 @@ import static org.mockito.Mockito.when;
 @ExtendWith(MockitoExtension.class)
 public class PasswordValidateControllerTest {
 
-    @Mock
-    private PasswordValidateService passwordValidateService;
+  @Mock
+  private PasswordValidateService passwordValidateService;
 
-    @InjectMocks
-    private PasswordValidateController passwordValidateController;
+  @InjectMocks
+  private PasswordValidateController passwordValidateController;
 
-    @ParameterizedTest
-    @ValueSource(strings = {"", "aa", "ab", "AAAbbbCc", "AbTp9!foo", "AbTp9!foA", "AbTp9 fok"})
-    void executePasswordValidateServiceValidatePasswordExpectedReturnFalse(String password) {
-        final var passwordDto = PasswordValidateRequestDTO.builder()
-                .password(password)
-                .build();
+  @ParameterizedTest
+  @ValueSource(strings = {"", "aa", "ab", "AAAbbbCc", "AbTp9!foo", "AbTp9!foA", "AbTp9 fok"})
+  void executePasswordValidateServiceValidatePasswordExpectedReturnFalse(String password) {
+    final var passwordDto = PasswordValidateRequestDTO.builder()
+        .password(password)
+        .build();
 
-        final var passwordModel = PasswordValidateModel.builder()
-                .password(password)
-                .build();
+    final var passwordModel = PasswordValidateModel.builder()
+        .password(password)
+        .build();
 
-        final var response = ResponseEntity.ok(PasswordValidateResponseDTO.builder()
-                .valid(false)
-                .build());
+    final var response = ResponseEntity.ok(PasswordValidateResponseDTO.builder()
+        .valid(false)
+        .build());
 
-        when(passwordValidateService.validatePassword(passwordModel)).thenReturn(false);
+    when(passwordValidateService.validatePassword(passwordModel)).thenReturn(false);
 
-        assertThat(passwordValidateController.validadePassword(passwordDto))
-                .isNotNull()
-                .isEqualTo(response);
-    }
+    assertThat(passwordValidateController.validadePassword(passwordDto))
+        .isNotNull()
+        .isEqualTo(response);
+  }
 
-    @ParameterizedTest
-    @ValueSource(strings = {"AbTp9!fok", "abTp9!fok", "abTp9&fok"})
-    void executePasswordValidateServiceValidatePasswordExpectedReturnTrue(String password) {
-        final var passwordDto = PasswordValidateRequestDTO.builder()
-                .password(password)
-                .build();
+  @ParameterizedTest
+  @ValueSource(strings = {"AbTp9!fok", "abTp9!fok", "abTp9&fok"})
+  void executePasswordValidateServiceValidatePasswordExpectedReturnTrue(String password) {
+    final var passwordDto = PasswordValidateRequestDTO.builder()
+        .password(password)
+        .build();
 
-        final var passwordModel = PasswordValidateModel.builder()
-                .password(password)
-                .build();
+    final var passwordModel = PasswordValidateModel.builder()
+        .password(password)
+        .build();
 
-        final var response = ResponseEntity.ok(PasswordValidateResponseDTO.builder()
-                .valid(true)
-                .build());
+    final var response = ResponseEntity.ok(PasswordValidateResponseDTO.builder()
+        .valid(true)
+        .build());
 
-        when(passwordValidateService.validatePassword(passwordModel)).thenReturn(true);
+    when(passwordValidateService.validatePassword(passwordModel)).thenReturn(true);
 
-        assertThat(passwordValidateController.validadePassword(passwordDto))
-                .isNotNull()
-                .isEqualTo(response);
-    }
+    assertThat(passwordValidateController.validadePassword(passwordDto))
+        .isNotNull()
+        .isEqualTo(response);
+  }
 }

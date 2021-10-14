@@ -1,6 +1,7 @@
 package ramon.pereira.password.validate.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -13,5 +14,5 @@ import lombok.NoArgsConstructor;
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class PasswordValidateModel {
 
-    private String password;
+  private String password;
 }

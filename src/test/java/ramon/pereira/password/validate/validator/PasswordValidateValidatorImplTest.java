@@ -12,18 +12,18 @@ import static org.assertj.core.api.Assertions.assertThatThrownBy;
 @ExtendWith(MockitoExtension.class)
 public class PasswordValidateValidatorImplTest {
 
-    @InjectMocks
-    private PasswordValidateValidatorImpl passwordValidateValidator;
+  @InjectMocks
+  private PasswordValidateValidatorImpl passwordValidateValidator;
 
-    @Test
-    void executePasswordValidateValidatorWithPasswordNullExpectNullPointException() {
-        assertThatThrownBy(() -> passwordValidateValidator.withPassword(null))
-                .isExactlyInstanceOf(NullPointerException.class);
-    }
+  @Test
+  void executePasswordValidateValidatorWithPasswordNullExpectNullPointException() {
+    assertThatThrownBy(() -> passwordValidateValidator.withPassword(null))
+        .isExactlyInstanceOf(NullPointerException.class);
+  }
 
-    @Test
-    void executePasswordValidateValidatorWithPasswordValidExpectSuccess() {
-        assertThat(passwordValidateValidator.withPassword("123456789"))
-                .isNotNull();
-    }
+  @Test
+  void executePasswordValidateValidatorWithPasswordValidExpectSuccess() {
+    assertThat(passwordValidateValidator.withPassword("123456789"))
+        .isNotNull();
+  }
 }

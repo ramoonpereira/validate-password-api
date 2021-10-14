@@ -14,25 +14,25 @@ import ramon.pereira.password.validate.validator.PasswordValidateValidator;
 @AllArgsConstructor
 public class PasswordValidateServiceImpl implements PasswordValidateService {
 
-    private final PasswordValidateValidator passwordValidateValidator;
+  private final PasswordValidateValidator passwordValidateValidator;
 
-    @Override
-    public Boolean validatePassword(@NonNull final PasswordValidateModel passwordValidateModel) {
-        try {
-            passwordValidateValidator.withPassword(passwordValidateModel.getPassword())
-                    .validSize()
-                    .validWhitespace()
-                    .validDigits()
-                    .validCharacterLowerCase()
-                    .validCharacterUpperCase()
-                    .validSpecialCharacters()
-                    .validRepeatedCharacters();
+  @Override
+  public Boolean validatePassword(@NonNull final PasswordValidateModel passwordValidateModel) {
+    try {
+      passwordValidateValidator.withPassword(passwordValidateModel.getPassword())
+          .validSize()
+          .validWhitespace()
+          .validDigits()
+          .validCharacterLowerCase()
+          .validCharacterUpperCase()
+          .validSpecialCharacters()
+          .validRepeatedCharacters();
 
-            return Boolean.TRUE;
+      return Boolean.TRUE;
 
-        } catch (PasswordInvalidException ex) {
-            return Boolean.FALSE;
-        }
-
+    } catch (PasswordInvalidException ex) {
+      return Boolean.FALSE;
     }
+
+  }
 }

@@ -4,5 +4,5 @@ import ramon.pereira.password.validate.model.PasswordValidateModel;
 
 public interface PasswordValidateService {
 
-    Boolean validatePassword(PasswordValidateModel passwordValidateModel);
+  Boolean validatePassword(PasswordValidateModel passwordValidateModel);
 }

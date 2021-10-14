@@ -20,20 +20,20 @@ import javax.validation.Valid;
 @AllArgsConstructor
 public class PasswordValidateController {
 
-    private final PasswordValidateService passwordValidateService;
+  private final PasswordValidateService passwordValidateService;
 
-    @PostMapping
-    public ResponseEntity<PasswordValidateResponseDTO> validadePassword(
-            @RequestBody @Valid final PasswordValidateRequestDTO requestDto
-    ) {
+  @PostMapping
+  public ResponseEntity<PasswordValidateResponseDTO> validadePassword(
+      @RequestBody @Valid final PasswordValidateRequestDTO requestDto
+  ) {
 
-        final var valid =
-                passwordValidateService.validatePassword(PasswordValidateMapper.toModel(requestDto));
+    final var valid =
+        passwordValidateService.validatePassword(PasswordValidateMapper.toModel(requestDto));
 
-        return ResponseEntity.ok(PasswordValidateResponseDTO.builder()
-                .valid(valid)
-                .build());
+    return ResponseEntity.ok(PasswordValidateResponseDTO.builder()
+        .valid(valid)
+        .build());
 
-    }
+  }
 
 }
