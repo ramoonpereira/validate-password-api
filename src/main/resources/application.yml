@@ -1,0 +1,7 @@
+app:
+  name: password.validate
+  description: Java Rest API- Password Validate
+  version: 1
+  contact: Ramon Pereira
+  url: https://www.linkedin.com/in/ramon-pereira-94a04b107/
+  email: ramon.alves@live.com

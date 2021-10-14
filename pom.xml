@@ -18,7 +18,7 @@
 		<lombok.version>1.18.22</lombok.version>
 		<maven-checkstyle.plugin.version>3.1.2</maven-checkstyle.plugin.version>
 		<checkstyle.version>9.0.1</checkstyle.version>
-		<springfox-swagger.version>3.0.0</springfox-swagger.version>
+		<springfox-swagger.version>2.9.2</springfox-swagger.version>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -46,10 +46,15 @@
 			<optional>true</optional>
 		</dependency>
 		<dependency>
-		<groupId>io.springfox</groupId>
-		<artifactId>springfox-boot-starter</artifactId>
-		<version>${springfox-swagger.version}</version>
-	</dependency>
+			<groupId>io.springfox</groupId>
+			<artifactId>springfox-swagger2</artifactId>
+			<version>${springfox-swagger.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>io.springfox</groupId>
+			<artifactId>springfox-swagger-ui</artifactId>
+			<version>${springfox-swagger.version}</version>
+		</dependency>
 	</dependencies>
 
 	<build>
