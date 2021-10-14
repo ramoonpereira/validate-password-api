@@ -11,7 +11,7 @@ import ramon.pereira.password.validate.service.PasswordValidateService;
 import ramon.pereira.password.validate.validator.PasswordValidateValidator;
 
 @Service
-@AllArgsConstructor(access = AccessLevel.PACKAGE, onConstructor = @__(@Autowired))
+@AllArgsConstructor
 public class PasswordValidateServiceImpl implements PasswordValidateService {
 
     private final PasswordValidateValidator passwordValidateValidator;
