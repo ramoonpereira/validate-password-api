@@ -39,7 +39,7 @@ mvn clean install sonar:sonar -Dsonar.host.url=http://localhost:9000 -Dsonar.pro
 **Recursos disponiveis:**
 
 | Rota | Versão |Descrição | HTTP Method |
-| -- | -- | -- | -- | -- |
+| -- | -- | -- | -- |
 | /swagger-ui.html | v1 |Interface para documentação da API| GET |
 | /v1/validatepassword | v1 | Método para validar uma senha | POST |
 
