@@ -44,7 +44,7 @@ mvn clean install sonar:sonar -Dsonar.host.url=http://localhost:9000 -Dsonar.pro
 | /v1/validatepassword | v1 | Método para validar uma senha | POST |
 
 
-# Validação
+## Validação
 
 Considere uma senha sendo válida quando a mesma possuir as seguintes definições:
 
@@ -56,7 +56,7 @@ Considere uma senha sendo válida quando a mesma possuir as seguintes definiçõ
     - Considere como especial os seguintes caracteres: !@#$%^&*()-+
 - Não possuir caracteres repetidos dentro do conjunto
 
-# Utilização
+## Utilização
 -Recurso: http://localhost:8080
 ```curl
 Exemplo de chamada feita via Postman:
@@ -74,3 +74,18 @@ Resposta:
 ```
 
 > **_Nota:_**  Os recursos poderão ser testado via interface -> http://localhost:8080/swagger-ui.html 
+
+## Solução
+
+- Arquitetura : O projeto foi elaborado utilizando a divisão em 3 camadas.
+- Controller: Camada da API disponibilizando os recursos disponiveis utilizando ferramentas como Swagger, DTO Pattern e Mapper.
+- Validator:  Utilizado padrões para facilitar nas etapas de validação do projeto
+- Service: Camada responsavel pela intermediação dos recursos disponibilizados pela API passando pelas validações da camada de Validator
+ 
+- Clean Code: Utilizado patterns e bibliotecas para um codigo limpo e objetivo como Lombok,Builder, Annotations,Google CheckStyle,etc.
+
+- Testes Unitários: Utilizados frameworks como JUnit e Mockito para realização dos testes nas unidades
+
+- Métricas: Utilizado Sonar com Jacoco/Coveralls para extração de metricas de cobertura de testes e code smells da aplicação.
+
+- CI/CD: Utilizado algumas ferramentas para simplificar as validações e execução do projeto. Circle CI, Docker, Docker Compose.
