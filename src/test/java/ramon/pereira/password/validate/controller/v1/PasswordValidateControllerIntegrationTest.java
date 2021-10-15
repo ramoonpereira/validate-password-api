@@ -30,7 +30,7 @@ class PasswordValidateControllerIntegrationTest {
   }
 
   @Test
-  public void postPasswordValidateWithPasswordNullExpectedBadRequest() {
+  void postPasswordValidateWithPasswordNullExpectedBadRequest() {
     final var requestDTO =
         PasswordValidateRequestDTO.builder()
             .password(null)
