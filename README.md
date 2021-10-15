@@ -3,8 +3,6 @@ Java Rest API-  Validate Password
 
 ![image](https://securityintelligence.com/wp-content/webp-express/webp-images/doc-root/wp-content/uploads/2018/10/si-eight-character-password-feature-630x330.jpg.webp)
 
-**[![CircleCI](https://circleci.com/gh/ramoonpereira/hermes.svg?style=shield)](https://circleci.com/gh/ramoonpereira/hermes)**
-
 ## Requisitos - Dev - Para desenvolvimento
 ```sh
 Java 11
