@@ -10,19 +10,23 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.ValueSource;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.boot.web.server.LocalServerPort;
 import org.springframework.test.context.ActiveProfiles;
 import ramon.pereira.password.validate.controller.v1.dtos.PasswordValidateRequestDTO;
 
-@SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.DEFINED_PORT)
+@SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 @ActiveProfiles("test")
 class PasswordValidateControllerIntegrationTest {
 
   private String passwordValidateEndpoint = "/v1/validatepassword";
 
+  @LocalServerPort
+  private int port;
+
   @BeforeEach
   void setUp() {
     baseURI = "http://localhost";
-    port = 8080;
+    port = port;
   }
 
   @Test
@@ -56,7 +60,7 @@ class PasswordValidateControllerIntegrationTest {
         post(passwordValidateEndpoint).
         then().
         statusCode(200).
-        body("valid",equalTo(false));
+        body("valid", equalTo(false));
   }
 
   @ParameterizedTest
@@ -74,6 +78,6 @@ class PasswordValidateControllerIntegrationTest {
         post(passwordValidateEndpoint).
         then().
         statusCode(200).
-        body("valid",equalTo(true));
+        body("valid", equalTo(true));
   }
 }
