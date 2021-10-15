@@ -6,13 +6,12 @@ import org.junit.jupiter.params.provider.ValueSource;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
-import org.springframework.http.ResponseEntity;
 import ramon.pereira.password.validate.controller.v1.dtos.PasswordValidateRequestDTO;
-import ramon.pereira.password.validate.controller.v1.dtos.PasswordValidateResponseDTO;
 import ramon.pereira.password.validate.model.PasswordValidateModel;
 import ramon.pereira.password.validate.service.PasswordValidateService;
 
 import static org.assertj.core.api.Assertions.assertThat;
+import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.when;
 
 @ExtendWith(MockitoExtension.class)
@@ -31,19 +30,17 @@ class PasswordValidateControllerTest {
         .password(password)
         .build();
 
-    final var passwordModel = PasswordValidateModel.builder()
-        .password(password)
-        .build();
+    when(passwordValidateService.validatePassword(any(PasswordValidateModel.class))).thenReturn(false);
 
-    final var response = ResponseEntity.ok(PasswordValidateResponseDTO.builder()
-        .valid(false)
-        .build());
+    final var response =
+        passwordValidateController.validadePassword(passwordDto);
 
-    when(passwordValidateService.validatePassword(passwordModel)).thenReturn(false);
+    assertThat(response)
+        .isNotNull();
 
-    assertThat(passwordValidateController.validadePassword(passwordDto))
+    assertThat(response.getBody())
         .isNotNull()
-        .isEqualTo(response);
+        .hasFieldOrPropertyWithValue("valid", false);
   }
 
   @ParameterizedTest
@@ -53,18 +50,16 @@ class PasswordValidateControllerTest {
         .password(password)
         .build();
 
-    final var passwordModel = PasswordValidateModel.builder()
-        .password(password)
-        .build();
+    when(passwordValidateService.validatePassword(any(PasswordValidateModel.class))).thenReturn(true);
 
-    final var response = ResponseEntity.ok(PasswordValidateResponseDTO.builder()
-        .valid(true)
-        .build());
+    final var response =
+        passwordValidateController.validadePassword(passwordDto);
 
-    when(passwordValidateService.validatePassword(passwordModel)).thenReturn(true);
+    assertThat(response)
+        .isNotNull();
 
-    assertThat(passwordValidateController.validadePassword(passwordDto))
+    assertThat(response.getBody())
         .isNotNull()
-        .isEqualTo(response);
+        .hasFieldOrPropertyWithValue("valid", true);
   }
 }
