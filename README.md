@@ -86,6 +86,8 @@ Resposta:
 
 - Testes Unitários: Utilizados frameworks como JUnit e Mockito para realização dos testes nas unidades
 
+- Testes Integração: Utilizado framework Rest Assured para testar a API, esse framework facilita os testes na API trabalhando no mesmo formato do BDD -> given, when e then
+
 - Métricas: Utilizado Sonar com Jacoco/Coveralls para extração de metricas de cobertura de testes e code smells da aplicação.
 
 - CI/CD: Utilizado algumas ferramentas para simplificar as validações e execução do projeto. Circle CI, Docker, Docker Compose.
